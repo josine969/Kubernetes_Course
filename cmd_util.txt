@@ -1,0 +1,31 @@
+cmd utiles kubernetes
+
+crear --> kubectl run podtest --image=nginx:alpine
+
+revisar pods -->  kubectl get pods
+
+log pods --> kubectl describe pod podtest
+
+revisar api --> kubectl api-resources
+
+revisar api filtrado --> kubectl api-resources | grep pod
+
+borrar pod --> kubectl delete pod
+
+ver yaml --> kubectl get pod podtest -o yaml
+
+ejecutar yaml --> kubectl apply -f echo1.yaml
+ejecuta yaml --> ubectl create -f pod.yaml
+
+
+Redirigir puertos --> kubectl port-forward <pod-name> 7000:<pod-port>
+
+Entrar al pod --> kubectl exec -ti podtest -- sh
+
+Revisar logs pod --> kubectl logs podtest
+
+Revisar logs pod con varios contenedores--> kubectl logs podtest -c cont2
+
+Instalar en ¿? --> apk add -U curl
+
+filtrar por label --> kubectl get pods -l app=backend

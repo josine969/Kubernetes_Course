@@ -1,0 +1,2 @@
+docker ps -l --> Revisar ultimo contendor
+docker ps -f=name=contendor --> Revisar contenedor en cuestion
