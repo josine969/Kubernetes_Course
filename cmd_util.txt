@@ -29,3 +29,7 @@ Revisar logs pod con varios contenedores--> kubectl logs podtest -c cont2
 Instalar en ¿? --> apk add -U curl
 
 filtrar por label --> kubectl get pods -l app=backend
+
+Revisar replica -->  kubectl get replicaset
+
+Añadir label pod --> kubectl label pod podtest app=front
