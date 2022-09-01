@@ -22,6 +22,8 @@ Redirigir puertos --> kubectl port-forward <pod-name> 7000:<pod-port>
 
 Entrar al pod --> kubectl exec -ti podtest -- sh
 
+Revisar pod --> kubectl debug
+
 Revisar logs pod --> kubectl logs podtest
 
 Revisar logs pod con varios contenedores--> kubectl logs podtest -c cont2
