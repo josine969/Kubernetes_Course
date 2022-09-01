@@ -24,6 +24,7 @@ metadata:
   name: my-service
   labels:
     app: front
+    test: jose
 spec:
   type: ClusterIP
   selector:
